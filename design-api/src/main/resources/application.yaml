@@ -1,0 +1,25 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybatis_plus?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    drive-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 3333
+  rabbitmq:
+    host: 192.168.31.253
+    port: 5672
+    virtual-host: /design-admin
+    username: design-admin
+    password: design-admin
+    listener:
+      simple:
+        prefetch: 1
+        acknowledge-mode: auto #消费者确认机制 none不确认 manual手动ack
+        retry:
+          enabled: true #消费者失败重试
+          initial-interval: 1000ms #初始失败等待时间1s
+          stateless: true # true无状态,fasle有状态,如果含有事务,则改成false
+          max-attempts: 3 #最大重试次数
+          multiplier: 1 #下次等待时长 = multiplier * 上次时长
+

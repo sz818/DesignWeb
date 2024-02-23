@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectStorage">
+    <option name="path" value="Sazze的私有团队-&gt;Sazze的私有项目" />
+    <option name="prefixUrlList">
+      <list>
+        <PrefixUrl>
+          <option name="moduleName" value="design-admin" />
+          <option name="prefixUrl" value="http://localhost:8082" />
+          <option name="rowIndex" value="0" />
+        </PrefixUrl>
+      </list>
+    </option>
+    <option name="profile" value="dev" />
+    <option name="projectId" value="700270b0-4389-4613-9d93-f83138083508" />
+  </component>
+</project>
